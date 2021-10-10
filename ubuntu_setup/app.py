@@ -28,3 +28,22 @@ password.send_keys("Helloworld**1")
 sign_in_button = browser.find_element_by_id('signInSubmit')
 sign_in_button.click()
 
+
+search_bar = browser.find_element_by_id('twotabsearchtextbox')
+search_bar.click()
+search_bar.send_keys('mackbook')
+
+search_submit = browser.find_element_by_id('nav-search-submit-button')
+search_submit.click()
+
+sort_by = browser.find_element_by_class_name('a-dropdown-prompt')
+sort_by.click()
+
+sort_selection = browser.find_element_by_link_text('Price: High to Low')
+sort_selection.click()
+
+
+
+
+# if __name__ == "__main__":
+    # signIn()
