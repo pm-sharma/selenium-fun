@@ -43,9 +43,10 @@ sort_by.click()
 sort_selection = browser.find_element_by_link_text('Price: High to Low')
 sort_selection.click()
 
-# search_result = browser.find_element_by_xpath('//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[2]/div/span/div/div/div[2]/div[2]/div/div/div[1]/h2/a')
-search_result = browser.find_element_by_css_selector("div[class='s-result-item']")
-# search_result.click()
+sleep(3) # let results get loaded
+
+search_result = browser.find_element_by_xpath("//div[@data-index='9']//a")
+search_result.click()
 
 # if __name__ == "__main__":
     # signIn()
